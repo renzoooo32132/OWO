@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Cumpleaños STAY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .rotated {
+      transform: rotate(-8deg);
+    }
+    .rotated2 {
+      transform: rotate(8deg);
+    }
+    body {
+      background: linear-gradient(to bottom right, #ffe6f0, #f5e1ff);
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="relative min-h-screen flex flex-col items-center justify-center text-pink-900 font-sans overflow-hidden p-4">
+
+  <!-- Imagen esquina superior izquierda -->
+  <img src="img1.jpg" alt="Decoración" class="absolute top-2 left-2 w-48 md:w-96 rounded-xl shadow-2xl rotated fade-in">
+
+  <!-- Imagen esquina inferior derecha -->
+  <img src="img2.png" alt="Decoración" class="absolute bottom-2 right-2 w-48 md:w-96 rounded-xl shadow-2xl rotated2 fade-in">
+
+  <!-- Título -->
+  <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-6 font-serif text-rose-600 drop-shadow-lg z-10 fade-in">
+    Feliz Cumpleaños STAY 💖
+  </h1>
+
+  <!-- Imagen central -->
+  <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-pink-200 max-w-sm sm:max-w-md md:max-w-4xl z-10 fade-in">
+    <img src="img3.jpg" alt="Stray Kids completo" class="w-full object-cover">
+  </div>
+
+  <!-- Texto -->
+  <p class="mt-6 text-center text-base sm:text-xl md:text-2xl text-pink-700 max-w-md sm:max-w-2xl px-4 z-10 fade-in">
+    Hoy celebramos a las personas que siempre están con Stray Kids. ¡Gracias por tu amor, STAY! 🎂💫
+  </p>
+
+</body>
+</html>
